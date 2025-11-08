@@ -23,6 +23,12 @@ body, html {
     flex-grow: 1;
 }
 
-/* .hovered {
+.hovered {
     background-color: blanchedalmond;
-} */
+}
+
+button {
+    cursor: pointer;
+    padding: 10px;
+    font-size: 17px;
+}
