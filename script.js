@@ -4,7 +4,7 @@ const deletedSquareFlexerIds = [];
 
 function getDimension() {
     const dimension = prompt('Enter number of squares per side for sketch pad (must not be greater than 100):');
-    return dimension;
+    return parseInt(dimension);
 }
 
 chooseBtn.addEventListener('click', function() {
@@ -12,7 +12,7 @@ chooseBtn.addEventListener('click', function() {
     if (userDimension > 100) while (userDimension > 100) {
         userDimension = getDimension();
     }
-    generateSketchPad(parseInt(userDimension));
+    generateSketchPad(userDimension);
 })
 
 function generateSketchPad(n) {
